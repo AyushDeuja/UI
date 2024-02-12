@@ -3,7 +3,13 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
 import {name as appName} from './app.json';
+import HomePage from './Adish/HomePage';
 
-AppRegistry.registerComponent(appName, () => App);
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEye, faEyeSlash, faLock, faPhone } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPhone,faLock,faEye,faEyeSlash)
+
+AppRegistry.registerComponent(appName, () => HomePage);
