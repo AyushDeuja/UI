@@ -5,10 +5,8 @@ export default function Logo({image}) {
   return (
     <View style={styles.LogoImage}>
       <Image
-      source={{
-        uri: image,
-      }}
-      style={{height:80,width:80}}
+      source={require('../Image/logo.png')}
+      style={{height:134,width:125}}
       />
     </View>
   )
@@ -16,7 +14,7 @@ export default function Logo({image}) {
 
 const styles = StyleSheet.create({
     LogoImage:{
-        paddingHorizontal: 150,
+        paddingHorizontal: 120,
         paddingVertical:100
     },
 

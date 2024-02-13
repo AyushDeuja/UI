@@ -12,7 +12,7 @@ export default function ForgotPass({text}) {
 
 const styles = StyleSheet.create({
     ForgotPass:{
-        bottom:10,
+        bottom:15,
         paddingHorizontal:20        
     },
     Forgot:{
