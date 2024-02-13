@@ -16,7 +16,6 @@ export default function Input({text, icon}) {
 const styles = StyleSheet.create({
     InputContainer:{
         paddingHorizontal:20,
-        // paddingVertical: 40,
         marginTop: 10
     },
   LoginInput: {
