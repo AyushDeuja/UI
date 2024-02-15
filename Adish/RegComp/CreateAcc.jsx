@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View,Dimensions, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-export default function Button({text}) {
+export default function CreateAcc({text}) {
   return (
     <TouchableOpacity style={styles.LoginButton}>
     <View style={styles.LoginContainer}>
@@ -14,12 +14,13 @@ export default function Button({text}) {
 const styles = StyleSheet.create({
     LoginButton:{
         alignItems: 'center',
+        bottom:30
     },
     LoginContainer:{
         borderRadius: 10,
         backgroundColor: '#02C685',
-        height:50,
-        width:Dimensions.get('screen').width-30,
+        height:56,
+        width:208,
         justifyContent: 'center',
     },
     LoginText:{

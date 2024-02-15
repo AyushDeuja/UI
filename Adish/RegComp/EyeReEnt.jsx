@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View ,TouchableOpacity} from 'react-native'
 import React,{useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-export default function EyeIcon({is_pass}) {
+export default function EyeReEnt({is_pass}) {
   const [passView, setPassView] = useState(true);
   const handlePress = () => {
     setPassView(!passView);
@@ -21,10 +21,9 @@ export default function EyeIcon({is_pass}) {
 
 const styles = StyleSheet.create({
     Eye:{
-      paddingBottom: 288,
     position: 'absolute',
     right: 40,
-    top: 390,
+    top: 490,
     alignItems: 'center',
     },
 })

@@ -1,18 +1,18 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import Logo from './components/Logo';
-import Input from './components/Input';
-import EyeIcon from './components/EyeIcon';
-import ForgotPass from './components/ForgotPass';
-import Button from './components/Button';
-import SignUp from './components/SignUp';
+import Logo from './LoginComp/Logo';
+import Input from './LoginComp/Input';
+import EyeIcon from './LoginComp/EyeIcon';
+import ForgotPass from './LoginComp/ForgotPass';
+import Button from './LoginComp/Button';
+import SignUp from './LoginComp/SignUp';
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <View>
       <Logo/>
 
-      <View style={{bottom:27}}>
+      <View style={{bottom:40}}>
         <Input text={'Phone Number'} icon={'phone'} />
         <Input text={'Password'} icon={'lock'} />
       </View>
