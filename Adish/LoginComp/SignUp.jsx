@@ -12,6 +12,7 @@ export default function SignUp({text,textt}) {
 
 const styles = StyleSheet.create({
     ForgotPass:{
+        bottom:12,
         paddingVertical: 10,
         flexDirection: 'row',
         alignItems: 'center',
