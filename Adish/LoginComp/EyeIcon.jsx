@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     Eye:{
     position: 'absolute',
     right: 40,
-    top: 378,
     alignItems: 'center',
     },
 })

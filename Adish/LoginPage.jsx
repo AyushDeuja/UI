@@ -16,10 +16,14 @@ export default function LoginPage() {
         <Input text={'Phone Number'} icon={'phone'} />
         <Input text={'Password'} icon={'lock'} />
       </View>
+      <View style={{bottom: 78}}>
       <EyeIcon is_pass={'false'} />
+      </View>
       <ForgotPass text={'Forgot password?'} textt={'ask for reset'} />
       <Button text={'LOGIN'} />
+      <View style={{bottom: 10}}>
       <SignUp text={"Don't have an account?"} textt={' Sign Up'} />
+      </View>
     </View>
   );
 }
