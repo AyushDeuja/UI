@@ -1,29 +1,34 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Logo from './LoginComp/Logo'
-import Input from './LoginComp/Input'
-import EyeCrt from './RegComp/EyeCrt'
-import EyeReEnt from './RegComp/EyeReEnt'
-import CreateAcc from './RegComp/CreateAcc'
-import Sign from './RegComp/Sign'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import Logo from './LoginComp/Logo';
+import Input from './LoginComp/Input';
+import CreateAcc from './RegComp/CreateAcc';
+import EyeIcon from './LoginComp/EyeIcon';
+import SignUp from './LoginComp/SignUp';
 
 export default function RegisterPage() {
   return (
     <View>
-        <Logo/>
+      <Logo />
 
-        <View style={{bottom:50}}>
-            <Input text={'Full Name'} icon={'user'}/>
-            <Input text={'Phone Number'} icon={'phone'} />
-            <Input text={'Create Password'} icon={'lock'} />
-            <Input text={'Re-Enter Password'} icon={'lock'} />
-        </View>
-      <EyeCrt is_pass={'false'}/>
-      <EyeReEnt is_pass={'false'}/>
-        <CreateAcc text={'Create Account'}/>
-        <Sign text={"Already have an account?"} textt={' Sign in here'}/>
+      <View style={{bottom: 50}}>
+        <Input text={'Full Name'} icon={'user'} />
+        <Input text={'Phone Number'} icon={'phone'} />
+        <Input text={'Create Password'} icon={'lock'} />
+        <Input text={'Re-Enter Password'} icon={'lock'} />
+      </View>
+      <View style={{bottom: 148}}>
+        <EyeIcon is_pass={'false'} />
+      </View>
+      <View style={{bottom: 87}}>
+        <EyeIcon is_pass={'false'} />
+      </View>
+      <CreateAcc text={'Create Account'} />
+      <View style={{bottom: 30}}>
+        <SignUp text={'Already have an account?'} textt={' Sign in here'} />
+      </View>
     </View>
-  )
+  );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
