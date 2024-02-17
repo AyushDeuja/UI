@@ -19,7 +19,7 @@ export default function LoginPage() {
       <View style={{bottom: 78}}>
       <EyeIcon is_pass={'false'} />
       </View>
-      <ForgotPass text={'Forgot password?'} textt={'ask for reset'} />
+      <ForgotPass text={'Forgot password?'} />
       <Button text={'LOGIN'} />
       <View style={{bottom: 10}}>
       <SignUp text={"Don't have an account?"} textt={' Sign Up'} />
