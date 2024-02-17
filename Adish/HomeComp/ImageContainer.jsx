@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 111,
         top: 45,
-        color: 'grey'
+        color: 'grey',
+        fontSize:14
     },
 })
