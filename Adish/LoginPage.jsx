@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import Logo from './LoginComp/Logo';
 import Input from './LoginComp/Input';
@@ -7,7 +7,14 @@ import ForgotPass from './LoginComp/ForgotPass';
 import Button from './LoginComp/Button';
 import SignUp from './LoginComp/SignUp';
 
-export default function LoginPage() {
+
+export default function LoginPage({navigation}) {
+  const HandleStack = () => {
+    navigation.navigate('home')
+  }
+  const ForgotStack = () => {
+    navigation.navigate('forgot')
+  }
   return (
     <View>
       <Logo/>
@@ -19,8 +26,8 @@ export default function LoginPage() {
       <View style={{bottom: 78}}>
       <EyeIcon is_pass={'false'} />
       </View>
-      <ForgotPass text={'Forgot password?'} />
-      <Button text={'LOGIN'} />
+      <ForgotPass text={'Forgot password?'} onPress={ForgotStack}/>
+          <Button text={'LOGIN'} onPress={HandleStack}/>
       <View style={{bottom: 10}}>
       <SignUp text={"Don't have an account?"} textt={' Sign Up'} />
       </View>
