@@ -14,7 +14,6 @@ export default function Logo({image}) {
 
 const styles = StyleSheet.create({
     LogoImage:{
-        // paddingHorizontal: 120,
         alignItems: 'center',
         paddingVertical:100
     },

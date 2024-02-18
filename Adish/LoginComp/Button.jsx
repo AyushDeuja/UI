@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Button({text}) {
   return (
-    <TouchableOpacity style={styles.LoginButton}>
+    <TouchableOpacity style={styles.LoginButton} >
     <View style={styles.LoginContainer}>
         <Text style={styles.LoginText}>{text}</Text>
     </View>
