@@ -6,9 +6,10 @@ import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
 import LoginPage from './Adish/LoginPage';
 import RegisterPage from './Adish/RegisterPage';
-import HomePage from './Adish/HomePage';
-import ForgotPage from './Adish/ForgotPage';
+import HomePage from './Adish/SettingPage';
+import ForgotPage from './Adish/ChangePassPage';
 import MyStack from './Adish/MyStack';
+import VerificationPage from './Adish/VerificationPage';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'

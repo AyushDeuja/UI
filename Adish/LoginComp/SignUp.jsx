@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function SignUp({text,textt}) {
+export default function SignUp({text,textt,onPress}) {
   return (
     <View style={styles.ForgotPass}>
       <Text style={styles.Forgot}>{text}</Text>
-      <Text style={styles.Reset}>{textt}</Text>
+      <Text style={styles.Reset} onPress={onPress}>{textt}</Text>
     </View>
   )
 }

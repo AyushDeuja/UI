@@ -6,7 +6,14 @@ import CreateAcc from './RegComp/CreateAcc';
 import EyeIcon from './LoginComp/EyeIcon';
 import SignUp from './LoginComp/SignUp';
 
-export default function RegisterPage() {
+export default function RegisterPage({navigation}) {
+  const LoginStack = () => {
+    navigation.navigate('login')
+  }
+  const CreateAccStack = () => {
+    navigation.navigate('verify')
+  }
+  
   return (
     <View>
       <Logo />
@@ -23,9 +30,9 @@ export default function RegisterPage() {
       <View style={{bottom: 87}}>
         <EyeIcon is_pass={'false'} />
       </View>
-      <CreateAcc text={'Create Account'} />
+      <CreateAcc text={'Create Account'} onPress={CreateAccStack}/>
       <View style={{bottom: 30}}>
-        <SignUp text={'Already have an account?'} textt={' Sign in here'} />
+        <SignUp text={'Already have an account?'} textt={' Sign in here'} onPress={LoginStack}/>
       </View>
     </View>
   );
