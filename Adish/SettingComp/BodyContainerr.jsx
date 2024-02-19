@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View,Image } from 'react-native'
+import { StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { text } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 
-export default function BodyContainerr({text,icon}) {
+export default function BodyContainerr({text,icon,onPress}) {
   return (
     <View>
         <View style={styles.Logo}>
@@ -14,7 +13,9 @@ export default function BodyContainerr({text,icon}) {
       </View>
       <Text style={styles.Text}>{text}</Text>
       <View style={styles.Icon}>
-        <FontAwesomeIcon icon={icon} size={20}/>
+        <TouchableOpacity onPress={onPress}>
+        < FontAwesomeIcon icon={icon} size={20} />
+        </TouchableOpacity>
       </View> 
     </View>
   )

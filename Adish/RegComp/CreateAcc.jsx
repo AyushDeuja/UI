@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View,Dimensions, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-export default function CreateAcc({text}) {
+export default function CreateAcc({text,onPress}) {
   return (
-    <TouchableOpacity style={styles.LoginButton}>
+    <TouchableOpacity style={styles.LoginButton} onPress={onPress}>
     <View style={styles.LoginContainer}>
         <Text style={styles.LoginText}>{text}</Text>
     </View>

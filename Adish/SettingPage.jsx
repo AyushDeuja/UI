@@ -1,18 +1,25 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import NavBar from './HomeComp/NavBar'
-import ImageContainer from './HomeComp/ImageContainer'
-import BodyContainer from './HomeComp/BodyContainer'
-import BodyContainerr from './HomeComp/BodyContainerr'
-import LogOut from './HomeComp/LogOut'
-import Footer from './HomeComp/Footer'
+import NavBar from './SettingComp/NavBar'
+import ImageContainer from './SettingComp/ImageContainer'
+import BodyContainer from './SettingComp/BodyContainer'
+import BodyContainerr from './SettingComp/BodyContainerr'
+import LogOut from './SettingComp/LogOut'
+import Footer from './SettingComp/Footer'
 
-export default function HomePage() {
+export default function SettingPage({navigation}) {
+  const LoginStack = () => {
+    navigation.navigate('login')
+  }
+  const ChangePassStack = () => {
+    navigation.navigate('password')
+  }
   return (
     <View>
         <NavBar
         icon={'arrow-left'}
         text={'Setting'}
+        onPress={LoginStack}
         />
         <View style={{bottom:20}}>
         <ImageContainer
@@ -29,11 +36,13 @@ export default function HomePage() {
         <BodyContainerr
         text={'Change Password'}
         icon={'greater-than'}
+        onPress={ChangePassStack}
         />
         </View>
         <View style={{paddingVertical:220}}>
         <LogOut
         text={'Log Out'}
+        onPress={LoginStack}
         />
         <Footer/>
         </View>
